@@ -1,0 +1,851 @@
+/* h1 {
+    color:#000;
+    margin: 20px 0px 20px;
+
+}
+
+h3 {
+    color:#000;
+
+    margin-bottom: 50px;
+}
+
+h4 {
+    color: #000;
+    letter-spacing: 2px;
+
+}
+
+p {
+    color: #000;
+    letter-spacing: 1px;
+    line-height: 28px;
+
+    margin-bottom: 45px;
+}
+
+
+.container-body {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+span {
+    color: #F20746;
+}
+
+
+ */
+
+
+/* GLOBAL */
+body {
+    font-family: "Roboto", "Helvetica", "Sans-serif";
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #777;
+    line-height: 1.7;
+}
+
+* {
+    outline: none;
+}
+
+*:not(.slick-track):not(.slick-list) {
+    transition: 0.4s;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 800;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color:  rgba(203, 46, 156, 0.962);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+h3 {
+  
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+h5 {
+    font-size: 1rem;
+    font-family: "Playfair Display", serif;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+button.rounded {
+    background:  rgba(135, 36, 105, 0.579);
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 10px 30px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+p.parrafo {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+/* FIN GLOBAL */
+
+
+/* HEADER */
+.img-uta{
+    width: 50px;
+    height: 50px;
+}
+/* #header-container {
+    min-height: 600px;
+    height: calc(100vh);
+    position: relative;
+} */
+
+.nav-link{
+    font-weight: bold;
+    color: #000;
+}
+
+.nav-link:hover{
+    color:  rgba(203, 46, 156, 0.962);
+    text-decoration-line: underline;
+
+}
+
+
+
+/* PRINCIPAL */
+/*#principal {
+     background: url('https://img2.rtve.es/i/?w=1600&i=1628606892247.jpg') center center no-repeat; 
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+#principal .fade {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(84, 15, 63, 0.579);
+    z-index: 1;
+}
+#principal .principal-text {
+    position: absolute;
+    top: 50%;
+    margin: -75px auto 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    color: #fff;
+    width: 600px;
+    text-align: center;
+}
+#principal .principal-text p {
+    line-height: 1.5em;
+    font-weight: 300;
+    font-size: 1.2rem;
+}*/
+/* FIN PRINCIPAL */
+
+/* TRABAJO */
+#trabajamos {
+    padding: 3rem 0;
+    background: #f8f9fa;
+    text-align: center;
+}
+
+#trabajamos h2 {
+    margin-bottom: 3rem;
+}
+
+#trabajamos .flex > div {
+    width: 30%;
+}
+
+#trabajamos h4 {
+    color: #392e31;
+    margin-top: 1rem;
+}
+
+#trabajamos span.fas {
+    color: rgba(203, 46, 156, 0.962);
+    font-size: 35px;
+}
+/* FIN TRABAJO */
+
+
+
+/* DULCES */
+#dulces {
+    margin: 4rem 0 8rem;
+    position: relative;
+}
+
+#dulces h2 {
+    margin-bottom: 3rem;
+}
+
+#dulces .container {
+    position: relative;
+}
+
+#dulces .container:before {
+   
+    position: absolute;
+    right: 80px;
+    top: 18px;
+    color: #999;
+}
+
+#dulces-slider a.slick-arrow {
+    color:  rgba(203, 46, 156, 0.962);
+    position: absolute;
+    top: -90px;
+    right: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+}
+
+#dulces-slider a.slick-prev {
+    right: 50px;
+}
+
+#dulces-slider .slick-slide {
+    padding: 0 15px;
+}
+
+#dulces-slider img {
+    width: 100%;
+    display: block;
+}
+
+#dulces-slider .dulces-detalles {
+    padding: 1rem;
+}
+
+#dulces-slider .price {
+    font-size: 1.2rem;
+    color: #343a40;
+    font-weight: 800;
+    margin: 0 0 0.5rem 0;
+}
+
+#dulces-slider .dulces-detalles span {
+    font-size: 0.8rem;
+    padding-right: 15px;
+}
+
+#dulces button.rounded {
+    display: block;
+    margin: 2rem auto 0;
+    width: 350px;
+}
+/* FIN DULCES */
+
+/* EMPLEADOS */
+
+#empleados {
+    background: #f8f9fa;
+    margin: 4rem 0 6rem;
+    padding: 0 0 6rem;
+    border-bottom: 1px solid #ccc;
+}
+
+#empleados p.parrafo {
+    width: 50%;
+    margin-bottom: 4rem;
+}
+
+#empleados .flex {
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+#empleados .card {
+    width: 32%;
+    background: #f0f0f0;
+    margin-bottom: 2rem;
+}
+
+#empleados .card img {
+    width: 100%;
+}
+
+#empleados .card h3 {
+    font-family: "Playfair Display", serif;
+    color: #000;
+}
+
+#empleados .card h3,
+#empleados .card p {
+    padding-left: 1rem;
+}
+/* FIN EMPLEADOS */
+
+/* PRODUCTO ESTRELLA */
+#estrella {
+    margin: 2rem 0;
+}
+
+#estrella .flex > img {
+    width: 47%;
+}
+
+#estrella .flex > div {
+    width: 40%;
+}
+
+#estrella ul {
+    padding-left: 20px;
+    margin-bottom: 4rem;
+}
+
+#estrella ul li {
+    margin: 10px 0;
+}
+/* FIN ESTRELLA */
+
+
+/* TESTIMONIOS */
+#testimonios {
+    background: #f8f9fa;
+    margin-bottom: 8rem;
+}
+
+#testimonios h2 {
+    text-align: center;
+}
+
+#testimonios-slider .slick-slide {
+    text-align: center;
+}
+
+#testimonios-slider blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin: 1rem auto 3rem;
+    max-width: 740px;
+}
+
+#testimonios-slider .testimonios-caption {
+    width: 200px;
+    margin: 0 auto;
+}
+
+#testimonios-slider .testimonios-caption img {
+    float: left;
+    border-radius: 30px;
+    width: 60px;
+}
+
+.testimonios-caption p {
+    position: relative;
+    top: 13px;
+    font-size: 1.2rem;
+}
+
+#testimonios-slider .slick-arrow {
+    text-decoration: none;
+    position: absolute;
+    font-size: 40px;
+    color: #222;
+    top: 50%;
+    margin-top: -35px;
+    z-index: 1;
+}
+#testimonios-slider .slick-next {
+    right: 0;
+}
+/* FIN TESTIMONIOS */
+
+
+/* CONTACTO */
+#contacto {
+    background: #f8f9fa;
+    padding: 4rem 0 8rem;
+}
+
+#contacto h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+#form-container {
+    width: 58%;
+    background: #fff;
+    padding: 3rem;
+    box-sizing: border-box;
+    height: 0%;
+}
+
+#form-container h3 {
+    color:  rgba(203, 46, 156, 0.962);
+    font-family: "Playfair Display", serif;
+    margin-bottom: 2rem;
+}
+
+#form-container label {
+    display: block;
+    color: #000;
+    margin-top: 1rem;
+}
+
+#form-container input,
+#form-container textarea {
+    display: block;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    width: 100%;
+    box-sizing: border-box;
+    height: 43px;
+    font-family: "Roboto", "Helvetica", "Sans-serif";
+    font-size: 1rem;
+    color: #495057;
+}
+
+#form-container textarea {
+    height: 170px;
+    margin-bottom: 2rem;
+    resize: none;
+}
+
+#direccion-container {
+    width: 38%;
+    background: #fff;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    height: 0%;
+}
+
+#direccion-container label {
+    font-weight: 700;
+    display: block;
+    margin-top: 2rem;
+}
+
+#direccion-container label:first-child {
+    margin-top: 0;
+}
+
+#direccion-container address {
+    margin-bottom: 1.5rem;
+    font-style: normal;
+}
+
+#direccion-container a {
+    text-decoration: none;
+    color: rgba(203, 46, 156, 0.962);
+}
+
+#direccion-container a:hover {
+    text-decoration: underline;
+}
+/* FIN CONTACTO */
+
+
+
+/* FOOTER */
+footer {
+    background: rgb(255, 255, 255);
+    padding: 2.8rem 0;
+}
+
+footer .flex {
+    padding-bottom: 2.8rem;
+    border-bottom: 1px solid #777;
+}
+
+footer h5 {
+    color: rgba(203, 46, 156, 0.962);
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+footer h5.follow-us {
+    margin-top: 0rem;
+}
+
+footer .footer-acerca {
+    width: 47%;
+}
+
+footer .footer-acerca p {
+    width: 65%;
+}
+
+footer .footer-links {
+    width: 16%;
+}
+
+footer .footer-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .footer-links ul li {
+    margin: 10px 0;
+}
+
+footer .footer-links ul li a {
+    color: #777;
+    text-decoration: none;
+}
+
+footer .footer-links ul li a:hover {
+    color: rgba(203, 46, 156, 0.962);
+}
+
+footer .footer-suscribete {
+    width: 35%;
+}
+
+
+footer .footer-suscribete input {
+    border-radius: 30px;
+    height: 43px;
+    font-family: "Roboto", "Helvetica", "Sans-serif";
+    border: 1px solid #6c757d;
+    background-color: transparent;
+    font-size: 1rem;
+    padding: 10px;
+    color:rgba(203, 46, 156, 0.962);
+    box-sizing: border-box;
+    width: 80%;
+}
+
+footer button.right-rounded {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: rgba(203, 46, 156, 0.962);
+    font-size: 16px;
+    color: #000;
+    padding: 10px 30px 9px;
+    line-height: 1.5;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    right: 0;
+}
+
+footer button.right-rounded:hover {
+    background:rgba(203, 46, 156, 0.962);
+}
+
+footer .footer-suscribete ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .footer-suscribete ul li {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+footer .footer-suscribete ul li:first-child {
+    margin-left: 0;
+}
+
+footer .footer-suscribete ul li a {
+    text-decoration: none;
+    color: #777;
+}
+
+footer .footer-suscribete ul li a:hover {
+    color: rgba(203, 46, 156, 0.962);
+}
+
+footer small {
+    margin-top: 3rem;
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+}
+
+footer small a {
+    color: #777;
+    text-decoration: none;
+}
+
+footer small a:hover {
+    color:rgba(203, 46, 156, 0.962);
+}
+/* FIN FOOTER */
+
+/* MEDIA QUERIES */
+@media (max-width: 991px) {
+    #logo {
+        top: 1px;
+    }
+
+    #nav-toggle {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        background: #fff;
+        right: -100%;
+        top: 0;
+        margin: 0;
+        padding: 2rem;
+        height: 100%;
+        width: 300px;
+        box-sizing: border-box;
+        box-shadow: 5px 0 10px 3px #999;
+    }
+
+    #close-flyout {
+        position: absolute;
+        right: 2rem;
+        top: 1.5rem;
+        font-size: 30px;
+        color: #777;
+        cursor: pointer;
+        display: block;
+        line-height: 1;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 20px 0;
+    }
+
+    nav ul li:first-child {
+        margin-top: 50px;
+    }
+    nav ul li a {
+        font-size: 20px;
+        color: #212529;
+    }
+
+    nav ul li a.active,
+    nav ul li a:hover {
+        color:  rgba(203, 46, 156, 0.962);;
+    }
+}
+
+
+
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .parrafo {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .container {
+        max-width: 540px;
+    }
+
+    #principal .principal-text {
+        width: 400px;
+    }
+
+    #empleados .card {
+        width: 49%;
+    }
+
+    #testimonios-slider p {
+        font-size: 1.2rem;
+    }
+
+    #dulces .container:before {
+        top: 2px;
+        font-size: 0.85rem;
+    }
+
+    #dulces-slider a.slick-arrow {
+        font-size: 0.85rem;
+    }
+
+    #dulces button.rounded {
+        width: 300px;
+    }
+
+
+    #contacto .flex {
+        flex-wrap: wrap;
+    }
+
+    #form-container {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    #direccion-container {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    footer {
+        padding: 6rem 0;
+    }
+
+    footer .flex {
+        flex-wrap: wrap;
+    }
+
+    footer .flex > div {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    footer .flex > div:first-child {
+        margin-top: 0;
+    }
+
+    footer .footer-acerca p {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    footer .footer-suscribete input {
+        width: 90%;
+    }
+
+    footer h5.sigueme {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    #principal .principal-text {
+        width: 330px;
+    }
+
+    #empleados {
+        margin: 4rem 0 3rem;
+        padding: 0 0 3rem;
+    }
+
+    #empleados .card {
+        width: 100%;
+    }
+
+    #empleados p.parrafo {
+        width: 100%;
+    }
+
+    #trabajamos .flex {
+        display: block;
+    }
+
+    #trabajamos .flex > div {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    #dulces button.rounded {
+        width: 250px;
+    }
+
+
+
+    #testimonios {
+        margin-bottom: 4rem;
+    }
+
+    #testimonios-slider p {
+        font-size: 1rem;
+    }
+
+    #testimonios-slider .slick-arrow {
+        display: none !important;
+    }
+
+    #contacto {
+        padding: 4rem 0;
+    }
+
+    #contacto h2 {
+        margin-bottom: 2rem;
+    }
+
+    #form-container {
+        padding: 1.5rem;
+    }
+
+    footer {
+        padding: 4rem 0;
+    }
+}
+
+@media (max-width: 400px) {
+  #principal .principal-text {
+     max-width: 275px;
+     width: 100%;
+  }
+  
+  #dulces button.rounded {
+     max-width: 250px;
+     width: 100%;
+  }
+  
+  nav ul {
+    width: 200px;
+  }
+}
