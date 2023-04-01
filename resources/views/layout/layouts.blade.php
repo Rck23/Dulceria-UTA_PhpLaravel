@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,14 @@
     <title>Página</title>
 
 
-    <link rel="stylesheet" href="{{asset('css/mdb.min.css')}}">
-       <!-- Fonts -->
-       <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/mdb.min.css') }}">
+    <!-- Fonts -->
+    <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
-       <!--CSS-->
-       <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
-    <link rel="stylesheet" href="{{asset('css/estiloYo.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/estiloYo.css') }}">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @stack('styles')
@@ -22,16 +23,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/min/dropzone.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/min/dropzone.min.js"></script>
 
-    <script src="{{asset('js/mdb.min.js')}}"></script>
+    <script src="{{ asset('js/mdb.min.js') }}"></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
 </head>
+
 <body>
 
-  <header>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg" ">
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg" ">
         <div class="d-flex justify-content-center align-items-center">
             <button class="navbar-toggler bg-light m-3" type="button" data-mdb-toggle="collapse"
                 data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false"
@@ -40,53 +42,53 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                     @guest
-                        <li class="nav-item active">
-                            <a class="nav-link text-dark fw-bold" aria-current="page"
-                                href="http://127.0.0.1:8000/">
-                                <i class="fas fa-sharp fa-solid fa-house-user m-2"></i>
-                                Inicio
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark fw-bold" aria-current="page"
-                                href="http://127.0.0.1:8000/login">
-                                <i class="fas fa-solid fa-user m-2"></i>Inicio de sesión</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark fw-bold" aria-current="page"
-                                href="http://127.0.0.1:8000/formulario">
-                                <i class="fas fa-regular fa-id-card m-2"></i>Crear cuenta</a>
-                        </li>
+                            <li class="nav-item active">
+                                <a class="nav-link text-dark fw-bold" aria-current="page"
+                                    href="http://127.0.0.1:8000/">
+                                    <i class="fas fa-sharp fa-solid fa-house-user m-2"></i>
+                                    Inicio
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark fw-bold" aria-current="page"
+                                    href="http://127.0.0.1:8000/login">
+                                    <i class="fas fa-solid fa-user m-2"></i>Inicio de sesión</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark fw-bold" aria-current="page"
+                                    href="http://127.0.0.1:8000/formulario">
+                                    <i class="fas fa-regular fa-id-card m-2"></i>Crear cuenta</a>
+                            </li>
                     @endguest
 
                     @auth
-                        <ul class="d-flex align-items-center">
-                            <li class="nav-item ">
-                                <a style="color:#F20746;" class="nav-link fw-bold">
-                                  <i style="color: #000;" class="fas fa-solid fa-user"></i>
-                                  {{ auth()->user()->username }}
-                                </a>
-                            </li>
-
-                        </ul>
-                        <div class="d-flex ">
-                            <ul class=" navbar-nav ml-auto derecha">
-
-
-                                <li class="nav-item">
-                                    <a href="{{ route('post.create') }}" class="nav-link  botonesAuth ">
-                                        <i class="fas fa-plus-circle m-1"></i>Añadir dulces
+                            <ul class="d-flex align-items-center">
+                                <li class="nav-item ">
+                                    <a style="color:#F20746;" class="nav-link fw-bold">
+                                      <i style="color: #000;" class="fas fa-solid fa-user"></i>
+                                      {{ auth()->user()->username }}
                                     </a>
                                 </li>
 
-                                <form action="{{ route('logout') }}" method="POST">
-                                    @csrf
-                                    <button type="submit" class="btn botonesAuth1  fw-bold">
-                                      Cerrar sesión
-                                    </button>
-                                </form>
-                        </div>
-                    </ul>
+                            </ul>
+                            <div class="d-flex ">
+                                <ul class=" navbar-nav ml-auto derecha">
+
+
+                                    <li class="nav-item">
+                                        <a href="{{ route('post.create') }}" class="nav-link  botonesAuth ">
+                                            <i class="fas fa-plus-circle m-1"></i>Añadir dulces
+                                        </a>
+                                    </li>
+
+                                    <form action="{{ route('logout') }}" method="POST">
+                                        @csrf
+                                        <button type="submit" class="btn botonesAuth1  fw-bold">
+                                          Cerrar sesión
+                                        </button>
+                                    </form>
+                            </div>
+                        </ul>
                 @endauth
                 </ul>
             </div>
@@ -94,23 +96,25 @@
     </nav>
     <!-- Navbar -->
 
-        <!-- Background image -->
-        <div
-          class="p-5 text-center bg-image"
-          style="
-            background-image: url('https://i.natgeofe.com/n/6c02ad5a-977b-4f12-b9c0-02ffb0736e07/metropolitan-cathedral-zocalo-mexico-city_16x9.JPG');
-            height: 400px;
-          "
-        >
-          <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
-            <div class="d-flex justify-content-center align-items-center h-100">
-              <div class="text-white">
-                
-              </div>
-            </div>
-          </div>
+    <div
+    class="p-5 text-center bg-image"
+    style="
+      background-image: url('https://img2.rtve.es/i/?w=1600&i=1628606892247.jpg');
+      height: 400px;
+    "
+  >
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="text-white">
+          <h1 class="mb-3">Dulceria UTA</h1>
+          <h4 class="mb-3">Creadores: Equipo 1</h4>
+          <a class="btn btn-outline-light btn-lg" href="#!" role="button"
+          >“Preocúpate por la calidad de tus productos, mucha gente no está preparada para la excelencia y sorprenderás”</a
+          >
         </div>
-        <!-- Background image -->
+      </div>
+    </div>
+  </div>
       </header>
 
       <div class="container mt-5 mb-5">

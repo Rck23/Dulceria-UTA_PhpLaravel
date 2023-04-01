@@ -31,10 +31,13 @@
   </section>
   
   <section id="dulces">
+    
   <div class="container">
       <h2>Dulces</h2>
       <div id="dulces-slider" class="slick">
-          <div>
+        @if ($posts->count())
+        @foreach ($posts as $post)  
+        {{-- <div>
               <img src="http://cdn.shopify.com/s/files/1/0415/6696/1824/products/WhatsApp-Image-2021-08-02-at-08.17.26-15.jpg?v=1638651588" alt="Property 1" />
               <div class="dulces-detalles">
                   <p class="price">$1.50</p>
@@ -50,18 +53,19 @@
                   <span class="beds">Mazapan</span>
   
               </div>
-          </div>
+          </div> --}}
   
-          <div>
-              <img src="https://detqhtv6m6lzl.cloudfront.net/wp-content/uploads/2021/05/mini_7432354-1.jpg" alt="Property 1" />
+           <div>
+              <img style="width: 238px;" src="{{ asset('uploads') . '/' . $post->imagen }}" alt="Property 1" />
               <div class="dulces-detalles">
-                  <p class="price">$8.00</p>
-                  <span class="beds">Bubulubu</span>
+                  <p class="price">${{ $post->descripcion }}</p>
+                  <span class="beds">{{ $post->titulo }}</span>
      
               </div>
           </div>
-  
-          <div>
+           @endforeach
+           @endif
+         <div>
               <img src="https://masbodegaonline.com.mx/media/catalog/product/i/m/image_7_5655.jpeg?optimize=low&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700" alt="Property 1" />
               <div class="dulces-detalles">
                   <p class="price">$7.00</p>
@@ -122,11 +126,14 @@
                   <span class="beds">Paleta payaso </span>
   
               </div>
-          </div>
+          </div> 
+
       </div>
-  
+     
       <button class="rounded">Ver todos los dulces disponibles</button>
-  </div>
+    </div>
+    
+
   </section>
   
   <section id="empleados">
@@ -283,7 +290,7 @@
   </div>
   </section>
   
-    <div class="card-body text-dark" >
+    {{-- <div class="card-body text-dark" >
 
         @if ($posts->count())
             <h1 class="card-title text-center">PUBLICACIONES</h1>
@@ -291,7 +298,7 @@
                 @foreach ($posts as $post)
                     <div class="col">
                         <div class="card h-100">
-                            <img src="{{ asset('uploads') . '/' . $post->imagen }}" class="card-img-top" alt="Devstagram" />
+                            <img  src="{{ asset('uploads') . '/' . $post->imagen }}" class="card-img-top " alt="Devstagram" />
                             <div class="card-body">
                                 <h5 class="card-title">{{ $post->titulo }}</h5>
                                 <p class="card-text">
@@ -312,7 +319,7 @@
                 <h1 class="text-center">NO HAY PUBLICACIONES</h1>
         @endif
     </div>
-    </div>
+    </div> --}}
 
     
 @endsection
