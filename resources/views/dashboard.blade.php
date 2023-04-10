@@ -1,8 +1,5 @@
 @extends('layout.layouts')
 
-{{-- @section('titulo')
-    
-@endsection --}}
 
 @section('contenido')
 <section id="trabajamos">
@@ -37,23 +34,6 @@
       <div id="dulces-slider" class="slick">
         @if ($posts->count())
         @foreach ($posts as $post)  
-        {{-- <div>
-              <img src="http://cdn.shopify.com/s/files/1/0415/6696/1824/products/WhatsApp-Image-2021-08-02-at-08.17.26-15.jpg?v=1638651588" alt="Property 1" />
-              <div class="dulces-detalles">
-                  <p class="price">$1.50</p>
-                  <span class="beds">Picafresa</span>
-  
-              </div>
-          </div>
-  
-          <div>
-              <img src="https://www.costco.com.mx/medias/sys_master/products/h13/h05/70367362285598.jpg" alt="Property 1" />
-              <div class="dulces-detalles">
-                  <p class="price">$3.50</p>
-                  <span class="beds">Mazapan</span>
-  
-              </div>
-          </div> --}}
   
            <div>
               <img style="width: 238px;" src="{{ asset('uploads') . '/' . $post->imagen }}" alt="Property 1" />
@@ -290,36 +270,7 @@
   </div>
   </section>
   
-    {{-- <div class="card-body text-dark" >
-
-        @if ($posts->count())
-            <h1 class="card-title text-center">PUBLICACIONES</h1>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                @foreach ($posts as $post)
-                    <div class="col">
-                        <div class="card h-100">
-                            <img  src="{{ asset('uploads') . '/' . $post->imagen }}" class="card-img-top " alt="Devstagram" />
-                            <div class="card-body">
-                                <h5 class="card-title">{{ $post->titulo }}</h5>
-                                <p class="card-text">
-                                    <small class="text-info">{{ '@' . $post->user->username }}</small>
-                                    <small class="text-muted">{{ $post->created_at->diffForHumans() }}</small>
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="{{ route('posts.show', ['post' => $post, 'user' => $user]) }}"><i
-                                        class="far fa-comment"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
-            </div>
-            <div> {{ $posts->links('pagination::bootstrap-5') }}
-            @else
-                <h1 class="text-center">NO HAY PUBLICACIONES</h1>
-        @endif
-    </div>
-    </div> --}}
+   
 
     
 @endsection

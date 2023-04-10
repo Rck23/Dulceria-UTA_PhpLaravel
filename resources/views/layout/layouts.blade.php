@@ -31,7 +31,7 @@
 
 <body>
 
-    <header>
+
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg" ">
         <div class="d-flex justify-content-center align-items-center">
